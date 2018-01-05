@@ -1,0 +1,8 @@
+.mode arm.aarch64
+
+ADRp_zzz A64_V   000001001 sz:1 1 zm:5 1010 msz:2  zn:5  zd:5 
+ADR_zzz A64_V    000001000 01 zm:5 1010 msz:2  zn:5  zd:5 
+ADR_zzz2 A64_V   000001000 11 zm:5 1010 msz:2  zn:5  zd:5 
+
+FEXPA_zz A64_V   00000100 size:2 100000101110 zn:5  zd:5 
+FTSSEL_zzz A64_V 00000100 size:2 1 zm:5 101100 zn:5  zd:5 

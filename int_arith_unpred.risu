@@ -1,0 +1,13 @@
+.mode arm.aarch64
+
+ADD_zzz A64_V     00000100 size:2 1 zm:5 000000 zn:5  zd:5 
+SUB_zzz A64_V     00000100 size:2 1 zm:5 000001 zn:5  zd:5 
+SQADD_zzz A64_V   00000100 size:2 1 zm:5 000100 zn:5  zd:5 
+SQSUB_zzz A64_V   00000100 size:2 1 zm:5 000110 zn:5  zd:5 
+UQADD_zzz A64_V   00000100 size:2 1 zm:5 000101 zn:5  zd:5 
+UQSUB_zzz A64_V   00000100 size:2 1 zm:5 000111 zn:5  zd:5 
+
+AND_zzz A64_V     00000100 001 zm:5 001100 zn:5  zd:5 
+ORR_zzz A64_V     00000100 011 zm:5 001100 zn:5  zd:5 
+EOR_zzz A64_V     00000100 101 zm:5 001100 zn:5  zd:5 
+BIC_zzz A64_V     00000100 111 zm:5 001100 zn:5  zd:5 

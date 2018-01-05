@@ -1,0 +1,12 @@
+.mode arm.aarch64
+
+DUP_r A64_V    00000101 size:2 100000001110 rn:5  zd:5 \
+!constraints { $rn != 31; }
+
+DUP_v A64_V    00000101 imm2:2 1 tsz:5 001000 zn:5  zd:5 
+
+INSR_r A64_V   00000101 size:2 100100001110 rm:5  zdn:5 
+INSR_v A64_V   00000101 size:2 110100001110 vm:5  zdn:5 
+
+REV A64_V      00000101 size:2 111000001110 zn:5  zd:5 
+TBL A64_V      00000101 size:2 1 zm:5 001100 zn:5  zd:5 

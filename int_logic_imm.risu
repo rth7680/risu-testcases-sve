@@ -1,0 +1,6 @@
+.mode arm.aarch64
+
+ORR_z A64_V  00000101 000000 imm13:13  zdn:5 
+EOR_z A64_V  00000101 010000 imm13:13  zdn:5 
+AND_z A64_V  00000101 100000 imm13:13  zdn:5 
+DUPM_z A64_V 00000101 110000 imm13:13  zd:5 

@@ -1,0 +1,15 @@
+.mode arm.aarch64
+
+# Integer increments
+CNT_r A64_V         00000100 size:2 10 imm4:4 111000 pattern:5  rd:5 \
+!constraints { $rd != 31; }
+
+INC_DEC_r A64_V     00000100 size:2 11 imm4:4 11100 d:1 pattern:5  rdn:5 \
+!constraints { $rdn != 31; }
+
+SAT_INC_DEC_r A64_V 00000100 size:2 1 sf:1 imm4:4 1111 d:1 u:1 pattern:5 rdn:5 \
+!constraints { $rdn != 31; }
+
+# Note size == 0 is unallocated, but just testing.
+INC_DEC_z A64_V      00000100 size:2 11 imm4:4 1100 0   d:1 pattern:5 zdn:5 
+SAT_INC_DEC_z A64_V  00000100 size:2 10 imm4:4 1100 d:1 u:1 pattern:5 zdn:5 

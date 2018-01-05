@@ -1,0 +1,6 @@
+.mode arm.aarch64
+
+MLA_zzpz A64_V 00000100 size:2 0 zm:5 010 pg:3  zn:5  zda:5 
+MLS_zzpz A64_V 00000100 size:2 0 zm:5 011 pg:3  zn:5  zda:5 
+MAD_zpzz A64_V 00000100 size:2 0 zm:5 110 pg:3  za:5  zdn:5 
+MSB_zpzz A64_V 00000100 size:2 0 zm:5 111 pg:3  za:5  zdn:5 

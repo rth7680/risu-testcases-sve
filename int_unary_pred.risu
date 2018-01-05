@@ -1,0 +1,18 @@
+.mode arm.aarch64
+
+CLS_zpz A64_V   00000100 size:2 011000101 pg:3  zn:5  zd:5 
+CLZ_zpz A64_V   00000100 size:2 011001101 pg:3  zn:5  zd:5 
+CNT_zpz A64_V   00000100 size:2 011010101 pg:3  zn:5  zd:5 
+CNOT_zpz A64_V  00000100 size:2 011011101 pg:3  zn:5  zd:5 
+NOT_zpz A64_V   00000100 size:2 011110101 pg:3  zn:5  zd:5 
+FABS_zpz A64_V  00000100 size:2 011100101 pg:3  zn:5  zd:5 
+FNEG_zpz A64_V  00000100 size:2 011101101 pg:3  zn:5  zd:5 
+
+ABS_zpz A64_V   00000100 size:2 010110101 pg:3  zn:5  zd:5 
+NEG_zpz A64_V   00000100 size:2 010111101 pg:3  zn:5  zd:5 
+SXTB_zpz A64_V  00000100 size:2 010000101 pg:3  zn:5  zd:5 
+SXTH_zpz A64_V  00000100 size:2 010010101 pg:3  zn:5  zd:5 
+SXTW_zpz A64_V  00000100 size:2 010100101 pg:3  zn:5  zd:5 
+UXTB_zpz A64_V  00000100 size:2 010001101 pg:3  zn:5  zd:5 
+UXTH_zpz A64_V  00000100 size:2 010011101 pg:3  zn:5  zd:5 
+UXTW_zpz A64_V  00000100 size:2 010101101 pg:3  zn:5  zd:5 

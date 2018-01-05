@@ -1,0 +1,17 @@
+.mode arm.aarch64
+
+ASR_zpi A64_V   00000100 tszh:2 000000100 pg:3  tszl:2  imm3:3  zdn:5 
+LSR_zpi A64_V   00000100 tszh:2 000001100 pg:3  tszl:2  imm3:3  zdn:5 
+LSL_zpi A64_V   00000100 tszh:2 000011100 pg:3  tszl:2  imm3:3  zdn:5 
+ASRD_zpi A64_V  00000100 tszh:2 000100100 pg:3  tszl:2  imm3:3  zdn:5 
+
+ASR_zpz A64_V   00000100 size:2 010000100 pg:3  zm:5  zdn:5 
+LSR_zpz A64_V   00000100 size:2 010001100 pg:3  zm:5  zdn:5 
+LSL_zpz A64_V   00000100 size:2 010011100 pg:3  zm:5  zdn:5 
+ASRR_zpz A64_V  00000100 size:2 010100100 pg:3  zm:5  zdn:5 
+LSRR_zpz A64_V  00000100 size:2 010101100 pg:3  zm:5  zdn:5 
+LSLR_zpz A64_V  00000100 size:2 010111100 pg:3  zm:5  zdn:5 
+
+ASR_zpw A64_V   00000100 size:2 011000100 pg:3  zm:5  zdn:5 
+LSL_zpw A64_V   00000100 size:2 011011100 pg:3  zm:5  zdn:5 
+LSR_zpw A64_V   00000100 size:2 011001100 pg:3  zm:5  zdn:5 

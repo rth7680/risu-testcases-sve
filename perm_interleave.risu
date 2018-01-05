@@ -1,0 +1,8 @@
+.mode arm.aarch64
+
+ZIP1v_zzz A64_V 00000101 size:2 1 zm:5 011000 zn:5  zd:5 
+ZIP2v_zzz A64_V 00000101 size:2 1 zm:5 011001 zn:5  zd:5 
+UZP1v_zzz A64_V 00000101 size:2 1 zm:5 011010 zn:5  zd:5 
+UZP2v_zzz A64_V 00000101 size:2 1 zm:5 011011 zn:5  zd:5 
+TRN1v_zzz A64_V 00000101 size:2 1 zm:5 011100 zn:5  zd:5 
+TRN2v_zzz A64_V 00000101 size:2 1 zm:5 011101 zn:5  zd:5 

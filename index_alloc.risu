@@ -1,0 +1,14 @@
+.mode arm.aarch64
+
+INDEX_ii A64_V    00000100 size:2 1 imm5b:5 010000 imm5:5  zd:5 
+INDEX_ir A64_V    00000100 size:2 1 rm:5    010010 imm5:5  zd:5 
+INDEX_ri A64_V    00000100 size:2 1 imm5:5  010001 rn:5    zd:5 
+INDEX_rr A64_V    00000100 size:2 1 rm:5    010011 rn:5    zd:5 
+
+ADDPL_rr A64_V    00000100 011 rn:5 01010 imm6:6  rd:5 \
+!constraints { $rn != 31 && $rd != 31; }
+ADDVL_rr A64_V    00000100 001 rn:5 01010 imm6:6  rd:5 \
+!constraints { $rn != 31 && $rd != 31; }
+
+RDVL_r A64_V      00000100 10111111 01010 imm6:6  rd:5 \
+!constraints { $rd != 31; }

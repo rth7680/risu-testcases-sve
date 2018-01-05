@@ -1,0 +1,4 @@
+.mode arm.aarch64
+
+FCPY  A64_V 00000101 size:2 01 pg:4 110 imm8:8  zd:5 
+CPY_i A64_V 00000101 size:2 01 pg:4 0 M:1  sh:1  imm8:8  zd:5 

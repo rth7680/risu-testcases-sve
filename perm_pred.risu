@@ -1,0 +1,29 @@
+.mode arm.aarch64
+
+COMPACT_zpz A64_V 000001011 sz:1 100001100 pg:3  zn:5  zd:5 
+
+CLASTAs_zpr A64_V 00000101 size:2 110000101 pg:3  zm:5  rdn:5 
+CLASTAs_zp A64_V 00000101 size:2 101010100 pg:3  zm:5  vdn:5 
+CLASTAv_zpz A64_V 00000101 size:2 101000100 pg:3  zm:5  zdn:5 
+CLASTBs_zpr A64_V 00000101 size:2 110001101 pg:3  zm:5  rdn:5 
+CLASTBs_zp A64_V 00000101 size:2 101011100 pg:3  zm:5  vdn:5 
+CLASTBv_zpz A64_V 00000101 size:2 101001100 pg:3  zm:5  zdn:5 
+
+LASTAs_zpr A64_V 00000101 size:2 100000101 pg:3  zn:5  rd:5 
+LASTAs_zp A64_V 00000101 size:2 100010100 pg:3  zn:5  vd:5 
+LASTBs_zpr A64_V 00000101 size:2 100001101 pg:3  zn:5  rd:5 
+LASTBs_zp A64_V 00000101 size:2 100011100 pg:3  zn:5  vd:5 
+
+CPYs_rpz A64_V 00000101 size:2 101000101 pg:3  rn:5  zd:5 \
+!constraints { $rn != 31; }
+
+CPYs_pz A64_V 00000101 size:2 100000100 pg:3  vn:5  zd:5 
+
+REVB_zpz A64_V 00000101 size:2 100100100 pg:3  zn:5  zd:5 
+REVH_zpz A64_V 00000101 size:2 100101100 pg:3  zn:5  zd:5 
+REVW_zpz A64_V 00000101 size:2 100110100 pg:3  zn:5  zd:5 
+RBIT_zpz A64_V 00000101 size:2 100111100 pg:3  zn:5  zd:5 
+
+SPLICE_zpz A64_V 00000101 size:2 101100100 pg:3  zm:5  zdn:5 
+
+SELv_zpzz A64_V 00000101 size:2 1 zm:5 11 pg:4  zn:5  zd:5 

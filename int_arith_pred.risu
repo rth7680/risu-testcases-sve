@@ -1,0 +1,25 @@
+.mode arm.aarch64
+
+ANDv_zpz A64_V 00000100 size:2 011010000 pg:3  zm:5  zdn:5 
+ORRv_zpz A64_V 00000100 size:2 011000000 pg:3  zm:5  zdn:5 
+EORv_zpz A64_V 00000100 size:2 011001000 pg:3  zm:5  zdn:5 
+BICv_zpz A64_V 00000100 size:2 011011000 pg:3  zm:5  zdn:5 
+
+ADDv_zpz A64_V 00000100 size:2 000000000 pg:3  zm:5  zdn:5 
+SUBv_zpz A64_V 00000100 size:2 000001000 pg:3  zm:5  zdn:5 
+SUBRv_zpz A64_V 00000100 size:2 000011000 pg:3  zm:5  zdn:5 
+
+SMAXv_zpz A64_V 00000100 size:2 001000000 pg:3  zm:5  zdn:5 
+SMINv_zpz A64_V 00000100 size:2 001010000 pg:3  zm:5  zdn:5 
+UMAXv_zpz A64_V 00000100 size:2 001001000 pg:3  zm:5  zdn:5 
+UMINv_zpz A64_V 00000100 size:2 001011000 pg:3  zm:5  zdn:5 
+SABD_zpz A64_V 00000100 size:2 001100000 pg:3  zm:5  zdn:5 
+UABD_zpz A64_V 00000100 size:2 001101000 pg:3  zm:5  zdn:5 
+
+MULv_zpz A64_V 00000100 size:2 010000000 pg:3  zm:5  zdn:5 
+SMULH_zpz A64_V 00000100 size:2 010010000 pg:3  zm:5  zdn:5 
+UMULH_zpz A64_V 00000100 size:2 010011000 pg:3  zm:5  zdn:5 
+SDIV_zpz A64_V 000001001 sz:1 010100000 pg:3  zm:5  zdn:5 
+SDIVR_zpz A64_V 000001001 sz:1 010110000 pg:3  zm:5  zdn:5 
+UDIV_zpz A64_V 000001001 sz:1 010101000 pg:3  zm:5  zdn:5 
+UDIVR_zpz A64_V 000001001 sz:1 010111000 pg:3  zm:5  zdn:5 

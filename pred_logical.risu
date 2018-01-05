@@ -1,0 +1,10 @@
+.mode arm.aarch64
+
+AND_pppp A64_V   00100101 0 s:1 00 pm:4 01 pg:4 0 pn:4 0 pd:4 
+BIC_pppp A64_V   00100101 0 s:1 00 pm:4 01 pg:4 0 pn:4 1 pd:4 
+EOR_pppp A64_V   00100101 0 s:1 00 pm:4 01 pg:4 1 pn:4 0 pd:4 
+ORR_pppp A64_V   00100101 1 s:1 00 pm:4 01 pg:4 0 pn:4 0 pd:4 
+SEL_pppp A64_V   00100101 0 s:1 00 pm:4 01 pg:4 1 pn:4 1 pd:4 
+NAND_pppp A64_V  00100101 1 s:1 00 pm:4 01 pg:4 1 pn:4 1 pd:4 
+NOR_pppp A64_V   00100101 1 s:1 00 pm:4 01 pg:4 1 pn:4 0 pd:4 
+ORN_pppp A64_V   00100101 1 s:1 00 pm:4 01 pg:4 0 pn:4 1 pd:4 

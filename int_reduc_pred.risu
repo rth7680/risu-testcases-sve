@@ -1,0 +1,13 @@
+.mode arm.aarch64
+
+ANDV_zp A64_V 00000100 size:2 011010001 pg:3  zn:5  vd:5 
+EORV_zp A64_V 00000100 size:2 011001001 pg:3  zn:5  vd:5 
+ORV_zp A64_V 00000100 size:2 011000001 pg:3  zn:5  vd:5 
+
+UADDV_zp A64_V 00000100 size:2 000001001 pg:3  zn:5  vd:5 
+SADDV_zp A64_V 00000100 size:2 000000001 pg:3  zn:5  vd:5 
+
+SMAXV_zp A64_V 00000100 size:2 001000001 pg:3  zn:5  vd:5 
+SMINV_zp A64_V 00000100 size:2 001010001 pg:3  zn:5  vd:5 
+UMAXV_zp A64_V 00000100 size:2 001001001 pg:3  zn:5  vd:5 
+UMINV_zp A64_V 00000100 size:2 001011001 pg:3  zn:5  vd:5 

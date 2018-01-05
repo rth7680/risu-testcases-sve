@@ -1,0 +1,9 @@
+.mode arm.aarch64
+
+ASR_zzi A64_V 00000100 tszh:2 1 tszl:2  imm3:3 100100 zn:5  zd:5 
+LSL_zzi A64_V 00000100 tszh:2 1 tszl:2  imm3:3 100111 zn:5  zd:5 
+LSR_zzi A64_V 00000100 tszh:2 1 tszl:2  imm3:3 100101 zn:5  zd:5 
+
+ASR_zzz A64_V 00000100 size:2 1 zm:5 100000 zn:5  zd:5 
+LSR_zzz A64_V 00000100 size:2 1 zm:5 100001 zn:5  zd:5 
+LSL_zzz A64_V 00000100 size:2 1 zm:5 100011 zn:5  zd:5 

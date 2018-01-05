@@ -1,0 +1,12 @@
+.mode arm.aarch64
+
+BRKA_ppp A64_V     001001010001000001 pg:4 0 pn:4 M:1 pd:4 
+BRKAS_ppp A64_V    001001010101000001 pg:4 0 pn:4 0 pd:4 
+BRKB_ppp A64_V     001001011001000001 pg:4 0 pn:4 M:1 pd:4 
+BRKBS_ppp A64_V    001001011101000001 pg:4 0 pn:4 0 pd:4 
+BRKN_ppp A64_V     001001010001100001 pg:4 0 pn:4 0 pdm:4 
+BRKNS_ppp A64_V    001001010101100001 pg:4 0 pn:4 0 pdm:4 
+BRKPA_pppp A64_V   001001010000 pm:4 11 pg:4 0 pn:4 0 pd:4 
+BRKPAS_pppp A64_V  001001010100 pm:4 11 pg:4 0 pn:4 0 pd:4 
+BRKPB_pppp A64_V   001001010000 pm:4 11 pg:4 0 pn:4 1 pd:4 
+BRKPBS_pppp A64_V  001001010100 pm:4 11 pg:4 0 pn:4 1 pd:4 

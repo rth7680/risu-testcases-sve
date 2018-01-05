@@ -1,0 +1,19 @@
+.mode arm.aarch64
+
+CMPEQ_zpzp A64_V 00100100 size:2 0 zm:5 001 pg:3  zn:5 0 pd:4 
+CMPGT_zpzp A64_V 00100100 size:2 0 zm:5 010 pg:3  zn:5 1 pd:4 
+CMPGE_zpzp A64_V 00100100 size:2 0 zm:5 010 pg:3  zn:5 0 pd:4 
+CMPHI_zpzp A64_V 00100100 size:2 0 zm:5 110 pg:3  zn:5 1 pd:4 
+CMPHS_zpzp A64_V 00100100 size:2 0 zm:5 110 pg:3  zn:5 0 pd:4 
+CMPLT_zpzp A64_V 00100100 size:2 0 zm:5 011 pg:3  zn:5 0 pd:4 
+CMPLE_zpzp A64_V 00100100 size:2 0 zm:5 011 pg:3  zn:5 1 pd:4 
+CMPLO_zpzp A64_V 00100100 size:2 0 zm:5 111 pg:3  zn:5 0 pd:4 
+CMPLS_zpzp A64_V 00100100 size:2 0 zm:5 111 pg:3  zn:5 1 pd:4 
+CMPNE_zpzp A64_V 00100100 size:2 0 zm:5 001 pg:3  zn:5 1 pd:4 
+
+CMPEQv_zpzp A64_V 00100100 size:2 0 zm:5 101 pg:3  zn:5 0 pd:4 
+CMPGTv_zpzp A64_V 00100100 size:2 0 zm:5 100 pg:3  zn:5 1 pd:4 
+CMPGEv_zpzp A64_V 00100100 size:2 0 zm:5 100 pg:3  zn:5 0 pd:4 
+CMPHIv_zpzp A64_V 00100100 size:2 0 zm:5 000 pg:3  zn:5 1 pd:4 
+CMPHSv_zpzp A64_V 00100100 size:2 0 zm:5 000 pg:3  zn:5 0 pd:4 
+CMPNEv_zpzp A64_V 00100100 size:2 0 zm:5 101 pg:3  zn:5 1 pd:4 
