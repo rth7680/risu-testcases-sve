@@ -1,0 +1,9 @@
+.mode arm.aarch64
+
+CNTP_ppr A64_V         00100101 size:2 10000010 pg:4 0 pn:4  rd:5 
+
+INCP_DECP_r A64_V      00100101 size:2 10110 d:1 1000100 pg:4  rdn:5 
+INCP_DECP_z A64_V      00100101 size:2 10110 d:1 1000000 pg:4  zdn:5 
+
+SAT_INCP_DECP_r A64_V  00100101 size:2 1010 d:1 u:1 10001 sf:1 0 pg:4 rdn:5 
+SAT_INCP_DECP_z A64_V  00100101 size:2 1010 d:1 u:1 10000 00 pg:4 zdn:5 
