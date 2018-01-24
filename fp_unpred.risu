@@ -1,0 +1,4 @@
+.mode arm.aarch64
+
+# FADD, FSUB, FMUL, FTSMUL, FRECPS, FRSQRTS + 2 unallocated
+FPALL A    01100101 size:2 0 zm:5 000 opc:3 zn:5 zd:5
