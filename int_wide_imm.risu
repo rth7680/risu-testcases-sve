@@ -1,0 +1,19 @@
+.mode arm.aarch64
+
+FDUP_z A64_V   00100101 size:2 111001110 imm8:8  zd:5 
+DUP_z A64_V    00100101 size:2 11100011 sh:1  imm8:8  zd:5 
+
+ADD_z A64_V    00100101 size:2 10000011 sh:1  imm8:8  zdn:5 
+SUB_z A64_V    00100101 size:2 10000111 sh:1  imm8:8  zdn:5 
+SUBR_z A64_V   00100101 size:2 10001111 sh:1  imm8:8  zdn:5 
+SQADD_z A64_V  00100101 size:2 10010011 sh:1  imm8:8  zdn:5 
+SQSUB_z A64_V  00100101 size:2 10011011 sh:1  imm8:8  zdn:5 
+UQADD_z A64_V  00100101 size:2 10010111 sh:1  imm8:8  zdn:5 
+UQSUB_z A64_V  00100101 size:2 10011111 sh:1  imm8:8  zdn:5 
+
+SMAX_z A64_V   00100101 size:2 101000110 imm8:8  zdn:5 
+SMIN_z A64_V   00100101 size:2 101010110 imm8:8  zdn:5 
+UMAX_z A64_V   00100101 size:2 101001110 imm8:8  zdn:5 
+UMIN_z A64_V   00100101 size:2 101011110 imm8:8  zdn:5 
+
+MUL_z A64_V    00100101 size:2 110000110 imm8:8  zdn:5 
