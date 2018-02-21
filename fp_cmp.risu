@@ -1,0 +1,4 @@
+.mode arm.aarch64
+
+CMP0 A    01100101 size:2 0100 eq:1 lt:1 001 pg:3 zn:5 ne:1 pd:4
+CMPV A    01100101 size:2 0 zm:5 op:1 1 o2:1 pg:3 zn:5 o3:1 pd:4

@@ -1,0 +1,7 @@
+.mode arm.aarch64
+
+FCVT A    01100101 opc:2 0010 opc2:2 101 pg:3 zn:5 zd:5
+FCVTZ A   01100101 opc:2 011 opc2:2 u:1 101 pg:3 zn:5 zd:5
+FRINT A   01100101 size:2 000 opc:3 101 pg:3 zn:5 zd:5
+FOP A     01100101 size:2 0011 opc:2 101 pg:3 zn:5 zd:5
+SCVT A    01100101 opc:2 010 opc2:2 u:1 101 pg:3 zn:5 zd:5

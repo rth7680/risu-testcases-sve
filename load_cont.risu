@@ -1,0 +1,43 @@
+.mode arm.aarch64
+
+LDR_p A       1000010 110 ih:6 000 il:3 rn:5 0 pt:4 \
+!constraints { $rn != 31; } \
+!memory { align(1); reg_plus_imm_pl($rn, sextract($ih * 8 + $il, 9)); }
+
+LDR_z A       1000010 110 ih:6 010 il:3 rn:5 zt:5 \
+!constraints { $rn != 31; } \
+!memory { align(1); reg_plus_imm_vl($rn, sextract($ih * 8 + $il, 9), 0); }
+
+LD1R_i A      1000010 dth:2 1 imm:6 1 dtl:2 pg:3 rn:5 zt:5 \
+!constraints { $rn != 31; } \
+!memory { my $msz = dtype_msz($dth * 4 + $dtl); \
+          align(1 << $msz); reg_plus_imm($rn, $imm << $msz); }
+
+LD1_i A       1010010 dtype:4 0 imm:4 101 pg:3 rn:5 zt:5 \
+!constraints { $rn != 31; } \
+!memory { my $msz = dtype_msz($dtype); \
+          align(1 << $msz); reg_plus_imm_vl($rn, sextract($imm, 4), $msz); }
+
+LD1_s A       1010010 dtype:4 rm:5 010 pg:3 rn:5 zt:5 \
+!constraints { $rn != 31 && $rm != 31 && $rn != $rm; } \
+!memory { my $msz = dtype_msz($dtype); \
+          align(1 << $msz); reg_plus_reg_shifted($rn, $rm, $msz); }
+
+LD1RQ_i A     1010010 msz:2 000 imm:4 001 pg:3 rn:5 zt:5 \
+!constraints { $rn != 31; } \
+!memory { align(1 << $msz); reg_plus_imm($rn, sextract($imm, 4) * 16); }
+
+LD1RQ_s A     1010010 msz:2 00 rm:5 000 pg:3 rn:5 zt:5 \
+!constraints { $rn != 31 && $rm != 31 && $rn != $rm; } \
+!memory { align(1 << $msz); reg_plus_reg_shifted($rn, $rm, $msz); }
+
+# Covers LD1NT, LD2, LD3, LD4
+LDN_i A       1010010 msz:2 n:2 0 imm:4 111 pg:3 rn:5 zt:5 \
+!constraints { $rn != 31; } \
+!memory { align(1 << $msz); \
+          reg_plus_imm_vl($rn, sextract($imm, 4) * ($n + 1), 0); }
+
+# Covers LD1NT, LD2, LD3, LD4
+LDN_s A       1010010 msz:2 n:2 rm:5 110 pg:3 rn:5 zt:5 \
+!constraints { $rn != 31 && $rm != 31 && $rn != $rm; } \
+!memory { align(1 << $msz); reg_plus_reg_shifted($rn, $rm, $msz); }

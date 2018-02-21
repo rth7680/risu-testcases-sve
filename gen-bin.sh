@@ -2,5 +2,7 @@
 
 for f in *.risu; do
    b=`basename $f .risu`.bin
-   $RISUGEN --sve $f $b
+   if [ ! -e $b ]; then
+     $RISUGEN --sve $f $b
+   fi
 done

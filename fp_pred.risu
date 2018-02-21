@@ -1,0 +1,8 @@
+.mode arm.aarch64
+
+FADDA A    01100101 size:2 011 000 001 pg:3 zm:5 vdn:5
+
+FPBIN A    01100101 size:2 00 opc:4 100 pg:3 zm:5 zdn:5
+FPIMM A    01100101 size:2 011 opc:3 100 pg:3 0000 i:1 zdn:5
+
+FTMAD A    01100101 size:2 010 imm:3 100000 zm:5 zdn:5

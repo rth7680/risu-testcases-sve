@@ -2,3 +2,8 @@
 
 # FADD, FSUB, FMUL, FTSMUL, FRECPS, FRSQRTS + 2 unallocated
 FPALL A    01100101 size:2 0 zm:5 000 opc:3 zn:5 zd:5
+
+FMUL_x A   01100100 size:2 1 opc:5 001000 zn:5 zd:5
+
+# FRECPE, FRSQRTE
+FPUNARY A  01100101 size:2 001 opc:3 001100 zn:5 zd:5
